@@ -9,3 +9,6 @@ def d_mul(a,b):
 
 def d_div(a,b):
     return a/b
+
+d_var = 55
+anyConstantLikePi = 9.365
