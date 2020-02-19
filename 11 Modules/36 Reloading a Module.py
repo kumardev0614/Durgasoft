@@ -3,18 +3,20 @@
 
 # Ex
 
-# import module1
-# import module1
-# import module1
-# import module1
+import module1
+import module1
+import module1
+import module1
 
-# print("This is Current file 36 Reloading a module.py")
+print("This is Current file 36 Reloading a module.py")
 
 # By above Example we can see, we have written import statement 4 times but module1 is imported only once
 # this is good to not reload same module again and again for performance.
 # but sometimes our requirement is to reload same module again and again
 # to do so we have a method reload(module_name) which is the member of module "importlib"
 
+
+# ----------------------------------------------------------------------------------------------------------------------
 # Ex----- suppose we are printing data from a module and that data changes in every 30 seconds, to show those changes
 # we have to load same module again and again
 # for testing purpose we have to change the data manually, we will use sleep() method from time module,
@@ -29,8 +31,8 @@ import module1
 
 print()
 print("program entered in sleep state")
-sleep(20)                      # we have to change data of module1 manually in these 30 seconds
-reload(module1)                # here we will see the changed data of same module
+sleep(20)  # we have to change data of module1 manually in these 30 seconds
+reload(module1)  # here we will see the changed data of same module
 print()
 print("program entered in sleep state again")
 sleep(20)

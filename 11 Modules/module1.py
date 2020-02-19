@@ -1,1 +1,1 @@
-print("3 time Module1 Loaded, data = 55")
+print("1 time Module1 Loaded, data = 55")

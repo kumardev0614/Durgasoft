@@ -8,8 +8,11 @@ import module2
 x = 99
 module2.findCodeSource(x)
 
+
+# ----------------------------------------------------------------------------------------------------------------------
 def findCodeSource():
     print("this code block is from module", __name__)
     print("x =", x)
+
 
 findCodeSource()
