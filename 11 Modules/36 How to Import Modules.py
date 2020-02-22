@@ -10,6 +10,7 @@ import devMath
 addition = devMath.d_add(5, 6)
 print(addition)
 
+
 multi = devMath.d_mul(devMath.d_var, 10)  # here d_var = 55
 print(multi)
 print("-----------")
