@@ -12,3 +12,4 @@ laxmi.power = "GodOfMoney"
 laxmi.gender = 'female'
 
 print(Indra.power)
+print()
