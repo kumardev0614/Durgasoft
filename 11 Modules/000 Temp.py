@@ -13,3 +13,4 @@ laxmi.gender = 'female'
 
 print(Indra.power)
 print()
+print()
