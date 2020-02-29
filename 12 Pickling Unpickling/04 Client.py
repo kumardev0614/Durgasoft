@@ -8,3 +8,7 @@ for i in range(3):
     obj = pickle.load(f)
     obj.display()
 
+print()
+print(type(obj))
+print(obj.__dict__)
+

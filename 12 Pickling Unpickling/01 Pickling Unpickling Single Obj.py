@@ -29,3 +29,4 @@ with open("emp0.dat", "rb") as myFile:                   # opening file in read 
     obj2.display()
 
 print(type(obj2))
+print(obj2.__dict__)
