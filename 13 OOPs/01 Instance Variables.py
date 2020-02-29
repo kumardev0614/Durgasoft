@@ -46,5 +46,6 @@ print(e4.__dict__)
 
 del e4.insentive
 print(e4.__dict__)
+#kk
 
 
