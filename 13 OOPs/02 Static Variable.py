@@ -71,3 +71,30 @@ t.s_method()
 print()
 Test.c_method()
 Test.s_method()
+print(t.__dict__)
+
+print('-----------------------------------')
+# How we can change value of static variable
+# We can change the value of static variable only by using ClassName or cls (if it is a class method)
+# If we use object reference or self, it will create a instance variable for that object with same name
+
+
+class abc:
+    a = 10
+    b = 15
+
+
+s1 = abc()                              # Here a = 10,  b = 15
+s2 = abc()                              # also a = 10,  b = 15
+print(s1.__dict__, s2.__dict__)         # there is no any instance variable
+s1.a = 99                               # Now python will create an instance variable a = 99
+print('s1.a =', s1.a, 's1.b =', s1.b)   # a = 99(instance variable)  b = 15(static variable)
+print('s2.a =', s2.a, 's2.b =', s2.b)   # a = 10(static variable)    b = 15
+print(s1.__dict__, s2.__dict__)         # {'a': 99} {}
+print()
+
+del s1.a                                # s1.a = 99 is deleted
+abc.a = 9658                            # static a = 9658
+print('s1.a =', s1.a, 's1.b =', s1.b)   # s1.a = 9658 s1.b = 15
+print('s2.a =', s2.a, 's2.b =', s2.b)   # s2.a = 9658 s2.b = 15
+print(s1.__dict__, s2.__dict__)
