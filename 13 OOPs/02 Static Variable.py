@@ -98,3 +98,5 @@ abc.a = 9658                            # static a = 9658
 print('s1.a =', s1.a, 's1.b =', s1.b)   # s1.a = 9658 s1.b = 15
 print('s2.a =', s2.a, 's2.b =', s2.b)   # s2.a = 9658 s2.b = 15
 print(s1.__dict__, s2.__dict__)
+
+print()
