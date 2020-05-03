@@ -44,7 +44,7 @@ print('End of the Program')
 
 print('---------------------------------------------------------------------------------------------------------------')
 # How many references are associated with an object
-# getrefcount() method from sys modules do that.
+# getrefcount() method from sys modules is used to count that.
 p1 = Test()
 p2 = p1
 p3 = p2
